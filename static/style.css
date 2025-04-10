@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Reset font size to original */
+h1 {
+    font-size: 2.5rem; /* Adjusted to match previous size */
+}
+
+p {
+    font-size: 1.25rem; /* Adjusted for readability */
+}
+
+.title-animate {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Reset button size */
+.btn-lg {
+    font-size: 1rem; /* Adjusted back to normal */
+    padding: 10px 20px;
+}
+
+.btn-animate {
+    transition: 0.3s ease-in-out;
+}
+
+.btn-animate:hover {
+    transform: scale(1.05);
+}
+
+/* Image size reset */
+.hero-img {
+    max-width: 80%; /* Reduce size back to original */
+    height: auto;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Image preview section */
+#previewContainer {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+#previewContainer img {
+    width: 80px;  /* Reduce preview size */
+    height: 80px; /* Keep proportions */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+#previewContainer img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
